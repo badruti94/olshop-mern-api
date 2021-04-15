@@ -1,0 +1,29 @@
+DATABASE{
+    user{
+        username,
+        email,
+        nama,
+        password,
+        role,
+        alamat,
+    }
+    product{
+        nama,
+        deskripsi,
+        foto,
+        harga
+    }
+    invoice{
+        tanggal,
+        nama_pemesan,
+        total_harga,
+        alamat,
+        status,
+        products:[{
+            nama,
+            foto,
+            harga,
+            jumlah
+        }]
+    }
+}
