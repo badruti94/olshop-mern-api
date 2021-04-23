@@ -24,10 +24,11 @@ exports.login = (req, res) => {
     password,
   } = req.body;
 
-  User.find({
+  User.findOne({
     username,
     password,
   }).then((user) => {
+    console.log(user.role);
     const token = jwt.sign({
       role: user.role,
     }, 'secret_key');
