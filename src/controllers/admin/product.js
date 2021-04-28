@@ -17,6 +17,7 @@ exports.create = (req, res) => {
 
   const product = new Product({
     ...req.body,
+    stok: 100,
     foto,
   });
   product.save().then((data) => {

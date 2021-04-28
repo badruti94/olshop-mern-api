@@ -27,3 +27,9 @@ DATABASE{
         }]
     }
 }
+
+# status
+Belum Dibayar
+Sudah Dibayar
+Dikirim
+Sampai

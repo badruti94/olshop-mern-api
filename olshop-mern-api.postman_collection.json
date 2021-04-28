@@ -1,0 +1,467 @@
+{
+	"info": {
+		"_postman_id": "9abfecef-1405-4986-93ee-5d8dd3c9f0e0",
+		"name": "olshop-mern-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"asman12\",\n    \"email\" : \"asman12@gmail.com\",\n    \"nama\" : \"Asman Siregar\",\n    \"password\" : \"password\",\n    \"alamat\" : \"Kpg. Badak No. 894, Administrasi Jakarta Pusat 57953, KalBar\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"asman12\",\n    \"password\" : \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin/user",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MTkxNDkyMjV9.jCgkmH2t24RqszsVuqEHwa70e9BT6MsTVU0H11-rjRc",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "jwt-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/admin/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin/product",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MTkxNDkyMjV9.jCgkmH2t24RqszsVuqEHwa70e9BT6MsTVU0H11-rjRc",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "jwt-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/admin/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin/product",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MTkxNDkyMjV9.jCgkmH2t24RqszsVuqEHwa70e9BT6MsTVU0H11-rjRc",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "jwt-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "HP Vivo",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "HP Vivo terbaru",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/home/badru/Downloads/Samsung_Galaxy_A31_a_L_1.jpg"
+						},
+						{
+							"key": "harga",
+							"value": "1000000",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin/product",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MTkxNDkyMjV9.jCgkmH2t24RqszsVuqEHwa70e9BT6MsTVU0H11-rjRc",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "jwt-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "HP Samsung",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "HP Samsung terbaru",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/home/badru/Downloads/Samsung_Galaxy_A31_a_L_1.jpg"
+						},
+						{
+							"key": "harga",
+							"value": "2000000",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/product/60825eaf081faf3c280a680b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"product",
+						"60825eaf081faf3c280a680b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin/product",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MTkxNDkyMjV9.jCgkmH2t24RqszsVuqEHwa70e9BT6MsTVU0H11-rjRc",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "jwt-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/admin/product/6088dd12033d7e0f930dd3f3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"product",
+						"6088dd12033d7e0f930dd3f3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user membeli",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\" : \"6077d4e8e39e2627b0a8c775\",\n    \"products\":[\n        {\n            \"id\" : \"6088ddb063f0a31289a6dd81\",\n            \"qty\" : 1\n        },\n        {\n            \"id\" : \"6088ddbe63f0a31289a6dd82\",\n            \"qty\" : 2\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/pembelian",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"pembelian"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user membayar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\" : \"6077d4e8e39e2627b0a8c775\",\n    \"products\":[\n        {\n            \"id\" : \"6088ddb063f0a31289a6dd81\",\n            \"qty\" : 1\n        },\n        {\n            \"id\" : \"6088ddbe63f0a31289a6dd82\",\n            \"qty\" : 2\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/pembelian/bayar/6088f2eea2b4d3212b2ea613",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"pembelian",
+						"bayar",
+						"6088f2eea2b4d3212b2ea613"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin melihat pesanan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\" : \"6077d4e8e39e2627b0a8c775\",\n    \"products\":[\n        {\n            \"id\" : \"6088ddb063f0a31289a6dd81\",\n            \"qty\" : 1\n        },\n        {\n            \"id\" : \"6088ddbe63f0a31289a6dd82\",\n            \"qty\" : 2\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/pesanan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"pesanan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin mengirim pesanan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\" : \"6077d4e8e39e2627b0a8c775\",\n    \"products\":[\n        {\n            \"id\" : \"6088ddb063f0a31289a6dd81\",\n            \"qty\" : 1\n        },\n        {\n            \"id\" : \"6088ddbe63f0a31289a6dd82\",\n            \"qty\" : 2\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/pesanan/kirim/6088f2eea2b4d3212b2ea613",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"pesanan",
+						"kirim",
+						"6088f2eea2b4d3212b2ea613"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user membeli barang",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\" : \"6077d4e8e39e2627b0a8c775\",\n    \"products\":[\n        {\n            \"id\" : \"6088ddb063f0a31289a6dd81\",\n            \"qty\" : 1\n        },\n        {\n            \"id\" : \"6088ddbe63f0a31289a6dd82\",\n            \"qty\" : 2\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/pembelian/terima/6088f2eea2b4d3212b2ea613",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"pembelian",
+						"terima",
+						"6088f2eea2b4d3212b2ea613"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

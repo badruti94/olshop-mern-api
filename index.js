@@ -8,6 +8,9 @@ const path = require('path');
 const login = require('./src/routes/login');
 const user = require('./src/routes/admin/user');
 const product = require('./src/routes/admin/product');
+const pesanan = require('./src/routes/admin/pesanan');
+
+const pembelian = require('./src/routes/user/pembelian');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -46,6 +49,10 @@ app.use('/login', login);
 // admin
 app.use('/admin/user', user);
 app.use('/admin/product', product);
+app.use('/admin/pesanan', pesanan);
+
+// user
+app.use('/user/pembelian', pembelian);
 
 app.listen(port, () => {
   console.log(`Listening on localhost:${port}`);
